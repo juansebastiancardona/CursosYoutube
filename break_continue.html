@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>break y csontinue</h1>
+
+    <script>
+
+
+        const loteria =  [312,324,544,625,754,756,825];
+        
+
+
+
+        for(let i = 0; i <loteria.length; i++){
+            if(i===324){
+                break;
+            }
+            console.log(loteria[i]);
+        }
+        for(let i=0; i < loteria.length; i++){
+            if(i===825){
+                continue;
+            }
+            console.log(loteria[i]);
+        }
+    </script>
+    
+</body>
+</html>

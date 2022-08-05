@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>repaos </h1>
+
+
+    <script>
+
+        let nombre = "SSebas";
+
+        let apellido = "cardona";
+        
+
+       console.log( nombre.toLowerCase());
+       console.log(nombre.toUpperCase());
+       console.log(nombre.includes("b"));
+       console.log(nombre.split(""));
+
+
+       let dos= `el apellido de sebas ${apellido}`;
+        console.log(dos);
+
+        let a = 2; 
+        let b = new Number (625);
+        let c = 5.22;
+
+        
+        console.log(c.toFixed(4));
+
+        console.log(b);
+        console.log(parseInt(c));
+        console.log(parseFloat(c));
+
+
+        function numeros_pares(){
+            console.log("2 4");
+            
+        }
+        numeros_pares();
+
+        function numeros_impares(){
+            return `3 6`;
+        }
+
+        let Mostrar_impar = numeros_impares();
+
+        console.log(Mostrar_impar);
+
+
+
+        function datos (nombre="desconocido" , edad = 0){
+            console.log(`su nombre es:${nombre} su edad es:${edad}`);
+
+        }
+        datos("sebas", 31);
+        
+
+        const colores = function(){
+            console.log("anonima");
+        }
+        colores();
+
+        const frutas = () =>{
+            console.log("arrow function");
+        }
+
+        frutas();
+
+
+        const digitos = [2,4,6,8,10];
+        console.log(digitos);
+        console.log(digitos[0]);
+
+        const digitos1 = Array.of(1,3,5,7,9);
+        console.log(digitos1);
+        console.log(digitos1[2]);
+
+        const arreglo3 = Array(3).fill("sebas");
+        console.log(arreglo3);
+
+
+        const objeto1 = {
+            nombre: "sebas",
+            edad: 30,
+            pasatiempo : ["estudiar", "gym"],
+
+         normal: function(){
+             console.log(" funcio normal");
+         },
+
+         anonima:()=>{
+             console.log(" funcion anonima");
+
+         },
+         interpolar: ()=>{
+             console.log(`el nombre del usuario es: ${objeto1.nombre}`)
+         },
+
+         redes:{
+             facebook: "sebast0625@hotmail.com",
+             twitter: "twitter"
+         }
+
+
+      
+        }
+        
+        console.log(objeto1.pasatiempo[1]);
+        objeto1.normal();
+        objeto1.anonima();
+        objeto1.interpolar();
+        console.log(objeto1.redes.facebook);
+
+
+        let nums =[10, 20,30];
+
+        for(let i = 0; i <nums.length; i++){
+            console.log(nums[i]);
+        }
+        // forin
+        for (const datos in objeto1){
+            console.log(datos);
+        }
+        // forof
+
+        let nombre3= "juanito";
+
+        for(const caracter of nombre3){
+            console.log(caracter);
+        }
+
+        // manejo de errores
+
+        
+
+
+    try {
+            let numero = "s";
+
+            if(isNaN(numero)){
+              throw new Error(" el dato ingresado no es un numero");
+            }
+        } catch (error2) {
+            console.log(`el error es el siguiente: ${error2}`);
+          
+         
+            
+        }
+
+
+
+        // break , continue
+
+        const loteria =  [1,2,3,4,5,6,7,8,9,0];
+        
+
+// salir cuando la posicion sea 5
+
+        for(let i = 0; i <loteria.length; i++){
+            if(i===5){
+                break;
+            }
+            console.log(loteria[i]);
+        }
+
+        // omitir la posicion 5 y contionuar
+        
+        for(let i=0; i < loteria.length; i++){
+            if(i===5){
+                continue;
+            }
+            console.log(loteria[i]);
+        }
+
+
+
+
+      
+       
+    </script>
+    
+</body>
+</html>

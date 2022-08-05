@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>manejo de errores</h2>
+
+    <script>
+
+        try {
+
+            otravariable;
+            console.log("aqui vael codigoa  evaluar y si dentro de se codigo hay un errorr, quien lo muestra es el catch y lo captura")
+            
+        } catch (error) {
+            console.log("este es el error");
+
+            console.log(error)
+        }
+        finally{
+            console.log("y finalmente")
+            
+        }
+
+
+        try {
+            let numero = "s";
+
+            if(isNaN(numero)){
+              throw new Error(" el dato ingresado no es un numero");
+            }
+        } catch (error2) {
+            console.log(`el error esel siguiente: ${error2}`);
+          
+         
+            
+        }
+    </script>
+
+
+    
+</body>
+</html>
